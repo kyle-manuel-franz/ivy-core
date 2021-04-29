@@ -1,0 +1,9 @@
+nodes:
+  - trigger:
+      next_node: 'node_1'
+  - node_1:
+      module: 'ebay'
+      next_node: 'node_2'
+  - node_2:
+      module: 'email'
+      next_node: -1
