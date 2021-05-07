@@ -1,4 +1,9 @@
 <h1>Ivy</h1>
+
+<h2>Getting Started</h2>
+- Install Docker
+
+
 <h2>Low Code Application Development</h2>
 
 Ivy is a low code application service build on top of docker that allows nodes to be implemented to be re-used 

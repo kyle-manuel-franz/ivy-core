@@ -13,6 +13,7 @@ const generateNodeContainerConfig = node_config => {
 }
 
 const createAndExecuteContainer = (node_config, opts = {}) => {
+    console.log(process.env.IVY_EMAIL_PASSWORD)
     return new Promise((resolve, reject) => {
         const containerConfig = generateNodeContainerConfig(node_config)
 
