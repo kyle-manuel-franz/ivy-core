@@ -19,7 +19,9 @@ const createAndExecuteContainer = (node_config, opts = {}) => {
         if(!opts.is_manager){
             containerConfig.Env = _.compact(_.concat(containerConfig.Env, [
                 `NODE_EXEC_ID=${uuid()}`,
-                `NODE_NAME=${opts.name}`
+                `NODE_NAME=${opts.name}`,
+                `IVY_EMAIL_USER=${process.env.IVY_EMAIL_USER}`,
+                `IVY_EMAIL_PASSWORD=${process.env.IVY_EMAIL_PASSWORD}`
             ]))
         }
 
